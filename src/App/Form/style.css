@@ -16,7 +16,7 @@
 .form__button {
     width: 100%;
     border: none;
-    background-color: teal;
+    background-color: rgb(148, 67, 0);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -24,11 +24,11 @@
 }
 
 .form__button:hover {
-    background-color: hsl(180, 100%, 30%);
+    background-color: hsl(27, 100%, 35%);
 }
 
 .form__button:active {
-    background-color: hsl(180, 100%, 35%);
+    background-color: hsl(27, 100%, 40%);
 }
 
 .form__fieldset {
@@ -39,14 +39,14 @@
 }
 
 .form__legend {
-    background-color: teal;
+    background-color: rgb(148, 67, 0);;
     color: white;
     border-radius: 5px;
     padding: 10px;
 }
 
 .form__header {
-    color: teal;
+    color: rgb(148, 67, 0);;
     text-align: center;
 }
 
