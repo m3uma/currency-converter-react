@@ -35,7 +35,7 @@ export const Form = ({ calculateResult, result }) => {
             </p>
             <p>
                 <label>
-                    <span className="form_labelText">
+                    <span className="form__labelText">
                         Currency:
                     </span>
                     <select
