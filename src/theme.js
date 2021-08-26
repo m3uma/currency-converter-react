@@ -6,8 +6,5 @@ export const theme = {
         boulder:"#777",
         white: "#fff",
         brown: "#994500",
-    },
-    breakpoint: {
-        mobileMax: 767,
-    },
+    }
 }
