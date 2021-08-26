@@ -1,4 +1,4 @@
-import './App.css';
+import { Wrapper } from './styled';
 import { Form } from './Form';
 import { Clock } from './Clock';
 import { currencies } from './currencies';
@@ -20,13 +20,13 @@ function App() {
     }
 
     return (
-        <div className="app">
+        <Wrapper>
             <Clock />
             <Form
                 result={result}
                 calculateResult={calculateResult}
             />
-        </div>
+        </Wrapper>
     );
 }
 
