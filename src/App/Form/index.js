@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import { LabelText, FieldSelect, FieldInput, Button, Header, Info } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -14,19 +14,18 @@ export const Form = ({ calculateResult, result }) => {
 
     return (
         <form className="form" onSubmit={onSubmit}>
-            <h1 className="form__header">
+            <Header>
                 Currency converter
-            </h1>
+            </Header>
             <p>
                 <label>
-                    <span className="form__labelText">
+                    <LabelText>
                         Amount in PLN*:
-                    </span>
-                    <input
+                    </LabelText>
+                    <FieldInput
                         value={amount}
                         onChange={({ target }) => setAmount(target.value)}
                         placeholder="Enter the amount in PLN"
-                        className="form__field"
                         type="number"
                         required
                         step="0.01"
@@ -35,11 +34,10 @@ export const Form = ({ calculateResult, result }) => {
             </p>
             <p>
                 <label>
-                    <span className="form__labelText">
+                    <LabelText>
                         Currency:
-                    </span>
-                    <select
-                        className="form__field"
+                    </LabelText>
+                    <FieldSelect
                         value={currency}
                         onChange={({ target }) => setCurrency(target.value)}
                     >
@@ -51,16 +49,16 @@ export const Form = ({ calculateResult, result }) => {
                                 {currency.name}
                             </option>
                         )))}
-                    </select>
+                    </FieldSelect>
                 </label>
             </p>
             <p>
-                <button className="form__button">Convert!</button>
+                <Button>Convert!</Button>
             </p>
 
-            <p className="form__info">
+            <Info>
                 The rates are taken from the nbp.pl website from table 164 / A / NBP / 2021 of 2021-08-25
-            </p>
+            </Info>
 
             <Result result={result} />
         </form>
