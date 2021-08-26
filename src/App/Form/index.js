@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import { LabelText, FieldSelect, FieldInput, Button, Header, Info } from "./styled";
+import { LabelText, Field, Button, Header, Info } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -22,7 +22,7 @@ export const Form = ({ calculateResult, result }) => {
                     <LabelText>
                         Amount in PLN*:
                     </LabelText>
-                    <FieldInput
+                    <Field
                         value={amount}
                         onChange={({ target }) => setAmount(target.value)}
                         placeholder="Enter the amount in PLN"
@@ -37,7 +37,8 @@ export const Form = ({ calculateResult, result }) => {
                     <LabelText>
                         Currency:
                     </LabelText>
-                    <FieldSelect
+                    <Field
+                        as="select"
                         value={currency}
                         onChange={({ target }) => setCurrency(target.value)}
                     >
@@ -49,7 +50,7 @@ export const Form = ({ calculateResult, result }) => {
                                 {currency.name}
                             </option>
                         )))}
-                    </FieldSelect>
+                    </Field>
                 </label>
             </p>
             <p>

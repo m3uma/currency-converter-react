@@ -7,15 +7,7 @@ export const LabelText = styled.span`
     margin-right: 5px;
 `;
 
-export const FieldSelect = styled.select`
-    border: 1px solid ${({theme}) => theme.color.silver};
-    padding: 10px;
-    width: 100%;
-    max-width: 350px;
-    border-radius: 5px;
-`;
-
-export const FieldInput = styled.input`
+export const Field = styled.input`
     border: 1px solid ${({theme}) => theme.color.silver};
     padding: 10px;
     width: 100%;
