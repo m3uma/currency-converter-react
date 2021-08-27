@@ -8,7 +8,7 @@ export const LabelText = styled.span`
 `;
 
 export const Field = styled.input`
-    border: 1px solid ${({theme}) => theme.color.silver};
+    border: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     width: 100%;
     max-width: 350px;
@@ -18,8 +18,8 @@ export const Field = styled.input`
 export const Button = styled.button`
     width: 100%;
     border: none;
-    background-color: ${({theme}) => theme.color.brown};
-    color: ${({theme}) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.brown};
+    color: ${({ theme }) => theme.color.white};
     padding: 10px;
     border-radius: 5px;
     transition: 0.3s;
@@ -34,12 +34,20 @@ export const Button = styled.button`
 `;
 
 export const Header = styled.h1`
-    color: ${({theme}) => theme.color.brown};
+    color: ${({ theme }) => theme.color.brown};
     text-align: center;
 `;
 
 export const Info = styled.p`
     font-size: 14px;
     text-align: center;
-    color: ${({theme}) => theme.color.emperor};
+    color: ${({ theme }) => theme.color.emperor};
+`;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.brown};
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.crimson};
 `;
