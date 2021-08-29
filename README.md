@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-This converter is a very simple application for converting Polish zlotys to foreign currencies. The following methods were used:
+This converter is a simple application developed using the react js technology for converting Polish zlotys to foreign currencies. The following methods were used:
 
 * useState
 * useEffect
