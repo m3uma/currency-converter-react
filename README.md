@@ -8,11 +8,13 @@ This converter is a simple application developed using the react js technology f
 
 * useState
 * useEffect
-* own hooks
+* custom hooks
 * Styled Components
 * Global Style
 * own themes
 * downloading data from external api
+
+**[CHECK IT OUT!](https://m3uma.github.io/currency-converter-react/)**
 
 ## Available Scripts
 
