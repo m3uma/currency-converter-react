@@ -13,6 +13,7 @@ This converter is a simple application developed using the react js technology f
 * Global Style
 * own themes
 * downloading data from external api
+* BEM convention
 
 **[CHECK IT OUT!](https://m3uma.github.io/currency-converter-react/)**
 
